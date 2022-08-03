@@ -1,0 +1,55 @@
+#fond-jeux{
+    /* border: 2px solid greenyellow; */
+    background-image: url(fond.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    animation: background-defile 8s linear infinite;
+    
+}
+h2{
+    text-align: center;
+    margin-top: 2px;
+
+}
+#grille div{
+    width: 25px;
+    height: 25px;
+   
+}
+.brave{
+    background: url(brave.jpg);
+    background-position: center;
+    background-size: cover;
+    /* transform: rotate(-90deg); */
+    
+     
+}
+.enemie{
+    background: url(enemie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.boom{
+    background-color: red;
+}
+.laser{
+     background-color: orange;
+     z-index: 1000;
+}
+@keyframes background-defile {
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: 995px;
+    }
+}
